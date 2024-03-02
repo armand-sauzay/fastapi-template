@@ -1,0 +1,11 @@
+services:
+  fastapi-template:
+    container_name: dev-fastapi-template
+    build:
+      context: .
+    volumes:
+      - ./src/:/app/src/
+    ports:
+      - "8010:80"
+    command:
+      ["uvicorn", "--host=0.0.0.0", "--port=80", "src.asgi:app", "--reload"]
