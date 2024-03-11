@@ -5,7 +5,7 @@
     {
       "matchManagers": ["pre-commit"],
       "groupName": "pre-commit dependencies",
-      "schedule": ["* * * * *"],
+      "schedule": ["* * 1 * *"],
       "commitMessageTopic": "pre-commit hook updates",
       "enabled": true,
       "automerge": true
