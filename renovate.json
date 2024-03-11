@@ -5,9 +5,10 @@
     {
       "matchManagers": ["pre-commit"],
       "groupName": "pre-commit dependencies",
-      "schedule": ["* * 1 * *"],
+      "schedule": ["* * * * *"],
       "commitMessageTopic": "pre-commit hook updates",
-      "enabled": true
+      "enabled": true,
+      "automerge": true
     }
   ]
 }
