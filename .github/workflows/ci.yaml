@@ -12,7 +12,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: armand-sauzay/actions-python/lint@v1
+      - uses: armand-sauzay/actions-python/lint@feat/cache-poetry-install
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -20,6 +20,6 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: armand-sauzay/actions-python/test@v1
+      - uses: armand-sauzay/actions-python/test@feat/cache-poetry-install
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
