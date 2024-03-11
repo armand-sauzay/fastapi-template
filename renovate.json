@@ -1,4 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":enablePreCommit"]
+  "extends": ["config:base", ":enablePreCommit"],
+  "packageRules": [
+    {
+      "matchManagers": ["pre-commit"],
+      "groupName": "pre-commit dependencies",
+      "schedule": ["every 15 minutes"],
+      "commitMessageTopic": "pre-commit hook updates",
+      "enabled": true
+    }
+  ]
 }
