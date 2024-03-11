@@ -12,7 +12,7 @@ repos:
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.3.1
+    rev: v0.3.2
     hooks:
       - id: ruff
       - id: ruff-format
@@ -22,7 +22,7 @@ repos:
       - id: prettier
         stages: [commit]
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.6.26
+    rev: v1.6.27
     hooks:
       - id: actionlint-docker
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
