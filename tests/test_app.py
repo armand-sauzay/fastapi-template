@@ -1,4 +1,5 @@
 """Test the health endpoint."""
+
 import httpx
 import pytest
 from fastapi.testclient import TestClient
