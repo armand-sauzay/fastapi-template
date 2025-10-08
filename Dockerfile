@@ -1,6 +1,6 @@
 #This docker image uses multi-stage builds to build the application and then
 #copy the build artifacts into a minimal runtime image.
-FROM python:3.12-slim AS python-base
+FROM python:3.14-slim AS python-base
 
 ENV PYTHONUNBUFFERED=1 \
     # prevents python creating .pyc files
